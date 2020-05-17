@@ -1,0 +1,57 @@
+.card {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  margin: 4px;
+
+  transform-style: preserve-3d;
+
+   /* animate rotate 180deg, that is, transform transitations */
+  transition: transform 1s;
+
+  /* perspective: 800px; -- use why? why not? */
+}
+.card:hover {
+    box-shadow: 0 2px 2px DodgerBlue ;
+}
+.card.shown {
+    background-color: #FEFEFE;
+    cursor: initial;
+    font-size: 30px;
+    transform: rotateY(180deg);
+}
+
+.card-back,
+.card-front {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* note: incl. margin+border in 100% calc - default is content-box */
+  box-sizing: border-box;
+  backface-visibility: hidden;
+
+  border-radius: 10px;
+
+  padding-top: 20px;
+  text-align: center;
+  font-size: 84px;
+  background-color: DodgerBlue;
+}
+
+.card-front {
+  border: 2px solid grey;
+  transform: rotateY( 180deg );
+}
+
+.card-front .hint {
+ font-size: 20px;
+}
+
+.card.shown .card-front {
+    display: block;
+}
+
+.card-back {
+ background-image: linear-gradient(silver,grey);
+}

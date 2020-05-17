@@ -1,0 +1,28 @@
+{
+  "name": "CDG",
+  "version": "1.0.0",
+  "homepage": "https://github.com/avgusev/deploycdg.git",
+  "private": false,
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "start": "react-scripts start"
+  },
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.5",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0",
+    "redux-devtools": "^3.4.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,10 @@
+html, body {
+  font-family: "Helvetica", sans-serif;
+  width: 700px;
+  height: 100%;
+  margin: 0 auto;    /* center container on page */
+}
+
+.is-hidden {
+  display: none;
+}
