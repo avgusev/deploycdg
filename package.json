@@ -1,7 +1,7 @@
 {
   "name": "CDG",
   "version": "1.0.0",
-  "homepage": "https://github.com/avgusev/deploycdg.git",
+  "homepage": "http://avgusev.github.io/deploycdg/",
   "private": false,
   "scripts": {
     "predeploy": "npm run build",
